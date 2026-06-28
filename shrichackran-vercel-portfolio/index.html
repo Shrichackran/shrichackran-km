@@ -24,16 +24,23 @@
   <div class="page-loader" id="page-loader" aria-label="Portfolio loading screen" role="status">
     <div class="loader-shell" aria-hidden="true">
       <div class="loader-browser-bar">
-        <span></span><span></span><span></span>
-        <small>shrichackran.me</small>
+        <div class="loader-brand"><span class="loader-logo">SKM</span><small>shrichackran.me</small></div>
+        <div class="loader-nav"><span>About</span><span>Skills</span><span>Projects</span></div>
+        <div class="loader-window-dots"><span></span><span></span><span></span></div>
       </div>
       <div class="loader-scene">
-        <div class="loader-grid"></div>
-        <div class="loader-orb"></div>
-        <p class="loader-label">INITIALIZING PORTFOLIO</p>
-        <div class="loader-progress"><span id="loader-progress-bar"></span></div>
+        <div class="loader-stars"></div>
+        <div class="loader-moon"></div>
+        <p class="loader-label">LOADING...</p>
         <p class="loader-percent"><span id="loader-percent">0</span>%</p>
-        <p class="loader-note">Loading projects • skills • experience</p>
+        <div class="loader-progress" aria-hidden="true"><span id="loader-progress-bar"></span></div>
+        <div class="loader-landscape" aria-hidden="true">
+          <span class="hill hill-one"></span>
+          <span class="hill hill-two"></span>
+          <span class="house house-one"></span>
+          <span class="house house-two"></span>
+          <span class="house house-three"></span>
+        </div>
       </div>
     </div>
   </div>

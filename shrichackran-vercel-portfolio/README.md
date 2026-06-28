@@ -1,74 +1,129 @@
-# Shrichackran K M Portfolio
+# Shrichackran K M — Static Portfolio
 
-A responsive React + Vite portfolio built for Vercel deployment. It includes:
+A production-ready personal portfolio website built with **HTML, CSS, and vanilla JavaScript**. It is designed for GitHub Pages deployment and recruiter-friendly scanning.
 
-- Dark AI-themed landing page
-- About, skills, experience, projects, services and contact sections
-- Project GitHub buttons linked to the correct repositories
-- Project assets modal/gallery
-- Resume download
+## What is included
+
+- Semantic HTML structure: `header`, `nav`, `main`, `section`, `footer`
+- Responsive clean layout for mobile, tablet, and desktop
+- Light/dark mode toggle with local storage
+- Recruiter-friendly project, skills, experience, education, and contact sections
+- Project asset gallery modal
 - EmailJS contact form integration
+- Downloadable resume PDF
+- SEO basics: meta title, description, Open Graph tags, favicon
 
-## 1. Install
-
-```bash
-npm install
-```
-
-## 2. Configure EmailJS
-
-Create a `.env.local` file in the project root:
-
-```env
-VITE_EMAILJS_SERVICE_ID=service_ktcd4zp
-VITE_EMAILJS_TEMPLATE_ID=template_yh79qbj
-VITE_EMAILJS_PUBLIC_KEY=x2P2JRv4AFlRKMJ8i
-```
-
-The form sends these template variables:
-
-- `name`
-- `email`
-- `from_name`
-- `from_email`
-- `reply_to`
-- `subject`
-- `title`
-- `message`
-
-Make sure your EmailJS template supports these variables.
-
-## 3. Run locally
-
-```bash
-npm run dev
-```
-
-## 4. Add project output assets
-
-Put images here:
+## Folder structure
 
 ```text
-public/project-assets/speech/
-public/project-assets/lifelink/
-public/project-assets/jobbzz/
-public/project-assets/wifi/
+.
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+│   ├── img/
+│   │   ├── favicon.svg
+│   │   ├── og-card.svg
+│   │   └── profile.png
+│   ├── projects/
+│   │   ├── store-intelligence/
+│   │   ├── lifelink/
+│   │   ├── speech/
+│   │   └── jobbzz/
+│   └── resume/
+│       └── Shrichackran_KM_Resume.pdf
+└── README.md
 ```
 
-Then open `src/data/portfolioData.js` and add assets like this:
+## Run locally
+
+Because this is a static site, you can open `index.html` directly in your browser.
+
+Recommended local server:
+
+```bash
+python -m http.server 5500
+```
+
+Then open:
+
+```text
+http://localhost:5500
+```
+
+## EmailJS setup
+
+The contact form is already wired in `js/script.js` with:
 
 ```js
-assets: [
-  { src: '/project-assets/speech/output-1.png', caption: 'Denoised audio waveform' },
-  { src: '/project-assets/speech/output-2.png', caption: 'Speech recognition output' }
-]
+service_ktcd4zp
+template_yh79qbj
+x2P2JRv4AFlRKMJ8i
 ```
 
-## 5. Deploy to Vercel
+In your EmailJS template, use any of these variables:
 
-1. Push this folder to GitHub.
-2. Import the repository in Vercel.
-3. Set build command: `npm run build`.
-4. Set output directory: `dist`.
-5. Add the same EmailJS variables in Vercel Project Settings → Environment Variables.
-6. Deploy.
+```text
+{{name}}
+{{user_name}}
+{{from_name}}
+{{email}}
+{{user_email}}
+{{from_email}}
+{{reply_to}}
+{{title}}
+{{subject}}
+{{message}}
+{{user_message}}
+{{to_name}}
+{{time}}
+```
+
+Recommended template body:
+
+```text
+New portfolio message
+
+Name: {{name}}
+Email: {{reply_to}}
+Subject: {{title}}
+
+Message:
+{{message}}
+
+Sent at: {{time}}
+```
+
+Make sure your EmailJS template recipient is your correct inbox.
+
+## Deploy on GitHub Pages
+
+1. Create a new GitHub repository.
+2. Upload all files from this folder to the repository root.
+3. Commit the files.
+4. Go to repository **Settings**.
+5. Open **Pages**.
+6. Under **Build and deployment**, choose:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/root`
+7. Save.
+8. Wait for GitHub Pages to publish the site.
+9. Open the generated GitHub Pages URL.
+
+## Update resume
+
+Replace this file:
+
+```text
+assets/resume/Shrichackran_KM_Resume.pdf
+```
+
+Keep the same filename so the resume download button continues to work.
+
+## Notes
+
+- Exact certification details were not added because the uploaded resume did not include a certification title/date.
+- Live demo links were only included where clearly available.

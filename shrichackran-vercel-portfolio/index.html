@@ -1,16 +1,289 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Shrichackran K M - Full Stack Developer and AI Engineer portfolio." />
-    <meta property="og:title" content="Shrichackran K M | Portfolio" />
-    <meta property="og:description" content="AI, full stack development, automation and software engineering projects." />
-    <meta property="og:type" content="website" />
-    <title>Shrichackran K M | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrichackran K M | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Shrichackran K M, a Software Developer focused on backend engineering, full-stack development, REST APIs, and AI/ML systems using Java, Python, FastAPI, Node.js, Docker, MySQL, and SQLite." />
+  <meta name="author" content="Shrichackran K M" />
+  <meta name="keywords" content="Shrichackran K M, Software Developer, Backend Developer, Full Stack Developer, SDE-1, Java, Python, FastAPI, Node.js, Express.js, REST APIs, Docker, AI ML, Computer Vision" />
+  <meta property="og:title" content="Shrichackran K M | Software Developer Portfolio" />
+  <meta property="og:description" content="Software Developer focused on backend engineering, full-stack systems, REST APIs, and AI/ML projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shrichackran.me" />
+  <meta property="og:image" content="assets/img/og-card.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" aria-label="Main site header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">SKM</span>
+        <span class="brand-text">Shrichackran</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" type="button" aria-label="Switch color theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Developer • Backend • Full‑Stack • AI/ML</p>
+          <h1 id="hero-title">Hi, I’m <span>Shrichackran K M</span>.</h1>
+          <p class="hero-intro">
+            I build practical software systems with Java, Python, REST APIs, backend services, and AI/ML workflows. My work is strongest where engineering meets real-world use cases: retail analytics, job automation, speech processing, and full-stack web applications.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="assets/resume/Shrichackran_KM_Resume.pdf" download>Download Resume</a>
+          </div>
+          <ul class="hero-stats" aria-label="Portfolio highlights">
+            <li><strong>81%</strong><span>pytest coverage on Store Intelligence API</span></li>
+            <li><strong>5</strong><span>production-style projects</span></li>
+            <li><strong>2026</strong><span>B.Tech ECE graduate</span></li>
+          </ul>
+        </div>
+        <aside class="hero-card reveal" aria-label="Profile summary card">
+          <div class="profile-frame">
+            <img src="assets/img/profile.png" alt="Shrichackran K M profile image" loading="eager" onerror="this.style.display='none'; this.parentElement.classList.add('profile-fallback');" />
+          </div>
+          <div class="profile-card-content">
+            <h2>Open to Software Developer / SDE‑1 roles</h2>
+            <p>Java, Python, FastAPI, Node.js, Docker, MySQL, SQLite, React.js, REST APIs, and AI/ML systems.</p>
+            <div class="social-row">
+              <a href="mailto:shrichackran@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/shrichackran" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/Shrichackran" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container two-column">
+        <div class="section-kicker">About</div>
+        <div class="section-copy reveal">
+          <h2 id="about-title">A fresher developer who likes building complete systems, not just isolated screens.</h2>
+          <p>
+            I’m an Electronics and Communication Engineering graduate from SASTRA Deemed University with a minor specialization in Programming and Application Development. I’m focused on software development roles where I can work on backend services, APIs, full-stack applications, and AI-enabled systems.
+          </p>
+          <p>
+            My projects are built around real use cases: CCTV-based retail analytics, blood donor matching, speech denoising and recognition, job alert automation, and ESP32-based network control. I care about clean implementation, measurable outputs, and making my work easy for recruiters and engineers to understand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2 id="skills-title">Stack grouped for recruiter scanning and ATS parsing.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><h3>Languages</h3><p>Java, Python, JavaScript, C++, SQL, HTML, CSS</p></article>
+          <article class="skill-card reveal"><h3>Frameworks & Libraries</h3><p>React.js, Node.js, Express.js, FastAPI, TensorFlow, PyTorch, NumPy, Pandas, Flutter</p></article>
+          <article class="skill-card reveal"><h3>Databases & APIs</h3><p>MySQL, SQLite, REST API Design, API Testing, Postman, JSON, backend services</p></article>
+          <article class="skill-card reveal"><h3>Cloud, DevOps & Tools</h3><p>Docker, Kubernetes, AWS, Azure, GCP, Render, Git, GitHub, deployment workflows</p></article>
+          <article class="skill-card reveal"><h3>AI/ML & Automation</h3><p>LLMs, GenAI, LangChain, RAG, NLP, Computer Vision, YOLOv8n, Claude API, n8n, Agentic AI</p></article>
+          <article class="skill-card reveal"><h3>Core CS & Practices</h3><p>OOP, Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks, SDLC, Debugging, Unit Testing</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Projects that show backend, full-stack, AI/ML, and automation depth.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media"><img src="assets/projects/store-intelligence/store2-dashboard-output.png" alt="Store Intelligence API dashboard output screenshot" loading="lazy" /></div>
+            <div class="project-body">
+              <div class="project-topline"><span>June 2026</span><span>Hackathon Build</span></div>
+              <h3>Store Intelligence API</h3>
+              <p>Real-time CCTV analytics backend built in a 32-hour hackathon. It uses YOLOv8n and ByteTrack for people detection/tracking and exposes FastAPI endpoints for event ingestion, metrics, funnel analytics, heatmaps, and anomaly detection.</p>
+              <div class="tag-list"><span>YOLOv8n</span><span>ByteTrack</span><span>FastAPI</span><span>SQLite</span><span>Docker</span><span>pytest</span></div>
+              <div class="project-links"><a href="https://github.com/Shrichackran/store-intelligence" target="_blank" rel="noopener noreferrer">GitHub</a><button class="link-button" type="button" data-gallery="store">View Assets</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media"><img src="assets/projects/lifelink/life1.png" alt="LifeLink blood donation platform screenshot" loading="lazy" /></div>
+            <div class="project-body">
+              <div class="project-topline"><span>Sep 2025</span><span>Full‑Stack</span></div>
+              <h3>LifeLink – Smart Blood Donation Platform</h3>
+              <p>Full-stack RESTful web application for real-time blood donor matching with location-based filtering, emergency-priority logic, and efficient MySQL-backed donor search workflows.</p>
+              <div class="tag-list"><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>REST APIs</span><span>HTML</span><span>CSS</span></div>
+              <div class="project-links"><a href="https://github.com/Shrichackran/LifeLink---Smart-Blood-Donation-Platform" target="_blank" rel="noopener noreferrer">GitHub</a><button class="link-button" type="button" data-gallery="lifelink">View Assets</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media"><img src="assets/projects/speech/speech3.png" alt="Speech denoising and recognition system screenshot" loading="lazy" /></div>
+            <div class="project-body">
+              <div class="project-topline"><span>Jan 2026</span><span>AI/ML</span></div>
+              <h3>Speech Denoising and Recognition System</h3>
+              <p>AI-native speech pipeline combining neural audio denoising with LLM-based transcription and post-processing. The workflow covers preprocessing, feature extraction, model inference, LLM orchestration, and output standardization.</p>
+              <div class="tag-list"><span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>LLM APIs</span><span>NLP</span></div>
+              <div class="project-links"><a href="https://github.com/Shrichackran/Speech-Denoising-and-Recognition-Neural-Network" target="_blank" rel="noopener noreferrer">GitHub</a><button class="link-button" type="button" data-gallery="speech">View Assets</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media"><img src="assets/projects/jobbzz/job1.png" alt="JoBzz agentic job alert system screenshot" loading="lazy" /></div>
+            <div class="project-body">
+              <div class="project-topline"><span>Mar 2025</span><span>Automation</span></div>
+              <h3>JoBzz – Agentic Job Alert System</h3>
+              <p>Live agentic automation pipeline on n8n integrating LinkedIn, Google Sheets, and Telegram APIs for real-time job discovery, keyword filtering, and alert delivery.</p>
+              <div class="tag-list"><span>n8n</span><span>JavaScript</span><span>APIs</span><span>Telegram</span><span>Google Sheets</span></div>
+              <div class="project-links"><a href="https://github.com/Shrichackran/JoBzz-AI-powered-Job-Matching-System" target="_blank" rel="noopener noreferrer">GitHub</a><button class="link-button" type="button" data-gallery="jobbzz">View Assets</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media project-placeholder" aria-label="WiFi Network Controller embedded systems project preview"><span>ESP32</span></div>
+            <div class="project-body">
+              <div class="project-topline"><span>Jan 2025</span><span>Embedded</span></div>
+              <h3>WiFi Network Controller</h3>
+              <p>ESP32-based network controller built with C++ and Flash Tool to support real-time Wi‑Fi access control in an embedded systems workflow.</p>
+              <div class="tag-list"><span>C++</span><span>ESP32</span><span>Embedded Systems</span><span>Wi‑Fi</span></div>
+              <div class="project-links"><a href="https://github.com/Shrichackran/Wifi-Network-Controller" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Industry exposure through software development internship work.</h2>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta"><span>June 2025 – July 2025</span><span>Salem, Tamil Nadu</span></div>
+              <h3>Software Development Intern · Steel Authority of India Limited (SAIL)</h3>
+              <ul>
+                <li>Developed Java-based backend modules for industrial machine data tracking and production-line monitoring.</li>
+                <li>Built a web-based reporting dashboard using HTML, CSS, and JavaScript to visualize machine test results and improve daily reporting workflows.</li>
+                <li>Analyzed internal data flows across production systems and supported data-driven monitoring, reporting, and process visibility.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education & Credentials</p>
+          <h2 id="education-title">Academic background aligned with software and systems engineering.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <h3>B.Tech in Electronics and Communication Engineering</h3>
+            <p class="institution">SASTRA Deemed University · Thanjavur, Tamil Nadu</p>
+            <p>Oct 2022 – Jun 2026 · CGPA: <strong>7.96/10</strong></p>
+          </article>
+          <article class="education-card reveal">
+            <h3>Minor Specialization</h3>
+            <p class="institution">Programming and Application Development</p>
+            <p>Additional academic focus on software fundamentals, application development, programming, and engineering problem solving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Recruiters, teams, and collaborators can reach me here.</h2>
+          <p>If you’re hiring for Software Developer, Backend Developer, Full‑Stack Developer, AI/ML Engineer, or SDE‑1 roles, I’d be happy to connect.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:shrichackran@gmail.com">shrichackran@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918300335132">+91 83003 35132</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shrichackran" target="_blank" rel="noopener noreferrer">linkedin.com/in/shrichackran</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Shrichackran" target="_blank" rel="noopener noreferrer">github.com/Shrichackran</a></li>
+          </ul>
+          <a class="btn secondary" href="assets/resume/Shrichackran_KM_Resume.pdf" download>Download Resume PDF</a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" aria-label="Contact form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="your.email@example.com" required />
+
+          <label for="title">Subject</label>
+          <input id="title" name="title" type="text" placeholder="Role opportunity / project discussion" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+          <button class="btn primary form-submit" type="submit">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="asset-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow">Project Assets</p>
+          <h2 id="modal-title">Assets</h2>
+        </div>
+        <button class="modal-close" type="button" data-close-modal aria-label="Close project assets">×</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shrichackran K M. Built with HTML, CSS, and vanilla JavaScript.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">This portfolio works best with JavaScript enabled for the theme toggle, project gallery, and contact form.</div>
+  </noscript>
+</body>
 </html>
